@@ -7,7 +7,7 @@ import (
 	tele "gopkg.in/telebot.v3"
 )
 
-var bChannelID = int64(-1003050934981)
+var bChannelID = int64(-1003323161290)
 var correctPassword = "alfa123" // 🔑 Parol
 type Ad struct {
 	Content string
