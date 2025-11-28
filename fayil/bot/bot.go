@@ -23,7 +23,7 @@ var userAds = make(map[int64]*Ad)
 var authorized = make(map[int64]bool) // ✅ Kim parol kiritganini saqlash
 func ElonMenu() *tele.ReplyMarkup {
 	menu := &tele.ReplyMarkup{}
-	btnBot := menu.URL("📩 Bizni bot", "https://t.me/animelaruzb1_bot")
+	btnBot := menu.URL("📩 Bizni bot", "https://t.me/animeshunchaki_bot")
 	menu.Inline(
 		menu.Row(btnBot),
 	)
@@ -85,7 +85,7 @@ func HandleText(c tele.Context) error {
 			log.Println("Kanalga yuborishda xatolik:", err)
 			return c.Send("❌ Kanalga yuborishda xatolik yuz berdi.")
 		}
-		link := fmt.Sprintf("https://t.me/c/3050934981/%d", M.ID)
+		link := fmt.Sprintf("https://t.me/c/323161290/%d", M.ID)
 		return c.Send(
 			fmt.Sprintf("✅ E’lon muvaffaqiyatli kanalga joylandi!\n👉 <a href='%s'>Kanalga o‘tish</a>", link),
 			&tele.SendOptions{ParseMode: tele.ModeHTML},
