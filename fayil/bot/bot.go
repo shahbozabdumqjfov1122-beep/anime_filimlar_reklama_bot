@@ -23,7 +23,7 @@ var userAds = make(map[int64]*Ad)
 var authorized = make(map[int64]bool) // ✅ Kim parol kiritganini saqlash
 func ElonMenu() *tele.ReplyMarkup {
 	menu := &tele.ReplyMarkup{}
-	btnBot := menu.URL("📩 Bizni bot", "https://t.me/animeshunchaki_bot")
+	btnBot := menu.URL("📩 Bizni bot", "https://t.me/anime_filimlar")
 	menu.Inline(
 		menu.Row(btnBot),
 	)
