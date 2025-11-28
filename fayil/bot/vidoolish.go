@@ -31,7 +31,7 @@ func HandleVideo(c tele.Context) error {
 				"📚 Janri: " + ad.Phone + "\n\n" +
 				"🎬 Qisimlar soni: " + ad.Salary + "\n\n" +
 				"🔖 anime ko'di: " + ad.Comment + "\n\n" +
-				"📩 bizni bot : @animelaruzb1_bot"
+				"📩 bizni bot : @anime_filimlar"
 
 		return c.Send(&tele.Video{
 			File:    ad.Video.File,
